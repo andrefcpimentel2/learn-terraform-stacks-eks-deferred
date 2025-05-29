@@ -23,3 +23,12 @@ component "kube" {
     kubernetes = provider.kubernetes.main
   }
 }
+
+component "pet" {
+  source  = "app.terraform.io/AndrePimentel/pet/random"
+  version = "1.0.0"
+
+  providers = {
+    random = provider.random.main
+  }
+}
