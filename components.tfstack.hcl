@@ -26,7 +26,7 @@ component "kube" {
 
 component "pet" {
   source  = "app.terraform.io/AndrePimentel/pet/random"
-  version = "1.0.0"
+  version = "2.0.0"
 
   providers = {
     random = provider.random.main
